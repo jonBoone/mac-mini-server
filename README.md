@@ -29,18 +29,4 @@ Description of how I set up my Mac mini (M1, 2020) as a server
     * [Basic Settings](https://www.stuartellis.name/articles/mac-setup/#basic-settings)
     * [Disable Spotlight](https://www.stuartellis.name/articles/mac-setup/#disable-spotlight)
     * [Enable File Vault NOW](https://www.stuartellis.name/articles/mac-setup/#enable-file-vault-now)
-  * Create RAID 1 volume for additional software not provided with macOS
-    * Prepare each of the External USB-C Hard Drives for use in the RAID mirror
-      - `diskutil eraseDisk JHFS+ UntitledUFS1 disk6`
-      - `diskutil eraseDisk JHFS+ UntitledUFS2 disk7`
-    * Unmount the newly created JHFS+ filesystems
-      - `diskutil unmount /Volume/UntitledUFS1`
-      - `diskutil unmount /Volume/UntitledUFS2`
-    * Create the RAID 1 set (note the first disk listed becomes the primary of the mirror)
-      - `diskutil appleRAID create mirror optSet JHFS+ disk7 disk6`
-    * Disable the validation of ownership on the new mirror disk
-      - `diskutil disableOwnership disk4`
-    * Configure for autorebuild
-      - `diskutil appleRAID update AutoRebuild 1`
-    * Look up the Volume UUID of the mirror filesystem
-   
+  * Create RAID 1 volume for additional software not provided with macOS   
