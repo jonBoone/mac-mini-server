@@ -18,7 +18,7 @@ Description of how I set up my Mac mini (M1, 2020) as a server
 ## Software
 
 1. macOS
-  * Version: 12.2.1
+  * Version: 12.3
   * Configuration:
     For much of the configuration, I utilized the information provided by Stuart Ellis in his [FIELD NOTES blog](https://www.stuartellis.name) in an entry titled [*How to Set up an Apple Mac for Software Development*](https://www.stuartellis.name/articles/mac-setup/#configuring-a-user-account).  In particular, I made sure to cover these sections:
     * [Do This First!](https://www.stuartellis.name/articles/mac-setup/#do-this-first)
